@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --body-background: hsl(0, 0%, 8%);
+  --card-background: hsl(0, 0%, 12%);
+  --button-background: hsl(0, 0%, 20%);
+  --button-hover-background: hsl(75, 94%, 57%);
+  --name-text-color: hsl(0, 0%, 100%);
+  --location-text-color: hsl(75, 94%, 57%);
+  --title-text-color: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  height: 100vh;
+  background-color: var(--body-background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .card {
+    width: fit-content;
+    max-width: 100%;
+    margin: 0 auto 20px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--card-background);
+    border-radius: 10px;
+
+    img {
+      width: 100px;
+      border-radius: 50%;
+      margin: 20px 0;
+    }
+    h1 {
+      color: var(--name-text-color);
+      font-size: 20px;
+    }
+    p {
+      font-size: 14px;
+      font-weight: 400;
+    }
+    .location {
+      color: var(--location-text-color);
+      margin-bottom: 20px;
+    }
+    .title {
+      color: var(--title-text-color);
+      margin-bottom: 10px;
+      padding: 0 1rem;
+      opacity: 80%;
+    }
+
+    a {
+      width: 100%;
+      font-weight: 600;
+      text-align: center;
+      text-decoration: none;
+      color: var(--name-text-color);
+      background-color: var(--button-background);
+      border: 1px solid var(--button-background);
+      margin-bottom: 10px;
+      padding: 10px 0;
+      border-radius: 10px;
+      &:hover {
+        font-weight: 700;
+        color: var(--body-background);
+        background-color: var(--button-hover-background);
+      }
+    }
+  }
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
